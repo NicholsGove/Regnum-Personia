@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information - Regnum Pecuniae</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper d-flex flex-column min-vh-100">
+        <!-- Header -->
+        <header class="bg-dark text-white py-3">
+            <div class="container">
+                <div class="logo h3">Regnum Pecuniae</div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow-1 text-center py-5 bg-light">
+            <div class="container">
+                <h1 class="display-4">User Information</h1>
+                <p class="lead">Please provide your business details.</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <form id="userInfoForm">
+                            <div class="mb-3">
+                                <label for="companyName" class="form-label">Business Name</label>
+                                <input type="text" class="form-control" id="companyName" placeholder="Enter your company name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="businessType" class="form-label">Type of Business</label>
+                                <input type="text" class="form-control" id="businessType" placeholder="Enter your business type" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+
+                        <!-- Success Message with Navigation Options -->
+                        <div id="successMessage" class="alert alert-success mt-4" style="display: none;">
+                            <p>Your information has been saved successfully!</p>
+                            <p>Where would you like to go next?</p>
+                            <div>
+                                <a href="index.html" class="btn btn-secondary me-2">Return to Home</a>
+                                <a href="pricing.html" class="btn btn-primary">Go to Pricing</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center py-3">
+            <p>&copy; 2024-25 Regnum Pecuniae. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById("userInfoForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form submission
+            const companyName = document.getElementById("companyName").value;
+            const businessType = document.getElementById("businessType").value;
+
+            // Simulate saving the information
+            if (companyName && businessType) {
+                // Hide the form and display the success message
+                document.getElementById("userInfoForm").style.display = "none";
+                document.getElementById("successMessage").style.display = "block";
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
