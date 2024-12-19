@@ -7,7 +7,7 @@
     <title>Pricing - Regnum Persona</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <link href="pricing.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
                     <ul class="nav">
                         <li class="nav-item">
                             <a class="nav-link text-white" href="index.html">
-                                <i class="bi bi-house-fill"></i>
+                                <i class="bi bi-house-fill"></i> 
                             </a>
                         </li>
                     </ul>
@@ -29,66 +29,116 @@
         </header>
 
         <!-- Main Content -->
-        <main class="flex-grow-1 text-center py-5 bg-light">
+        <main class="flex-grow-1 py-5 bg-light">
             <div class="container">
-                <h1 class="display-4">Pricing Plans</h1>
-                <p class="lead">Choose the plan that best fits your needs.</p>
-                <div class="row justify-content-center">
-                    <!-- Basic Plan -->
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <div class="card-header bg-primary text-white">
-                                <h4 class="my-0 fw-normal">Basic</h4>
+                <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                    <h1 class="display-4 fw-normal">Pricing</h1>
+                    <p class="fs-5">Choose a plan that suits your needs.</p>
+                </div>
+
+                <!-- Pricing Cards -->
+                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">SMEs</h4>
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title pricing-card-title">$19 <small class="text-muted">/ mo</small></h1>
+                                <h1 class="card-title pricing-card-title">$30<small class="text-body-secondary fw-light">/mo</small></h1>
                                 <ul class="list-unstyled mt-3 mb-4">
-                                    <li>Access to all basic features</li>
-                                    <li>1 User</li>
+                                    <li>Access to all standard features</li>
+                                    <li>Basic Dashboard</li>
                                     <li>Email Support</li>
                                 </ul>
-                                <button class="btn btn-primary w-100 get-started" data-plan="Basic">Get Started</button>
+                                <button class="btn btn-lg btn-outline-primary w-100 get-started" data-plan="SMEs">Get Started</button>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Pro Plan -->
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <div class="card-header bg-success text-white">
-                                <h4 class="my-0 fw-normal">Pro</h4>
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Medium-sized Enterprise</h4>
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title pricing-card-title">$49 <small class="text-muted">/ mo</small></h1>
+                                <h1 class="card-title pricing-card-title">$100<small class="text-body-secondary fw-light">/mo</small></h1>
                                 <ul class="list-unstyled mt-3 mb-4">
-                                    <li>Access to all features</li>
-                                    <li>Up to 5 Users</li>
+                                    <li>Advanced Features</li>
                                     <li>Priority Support</li>
                                     <li>Advanced Reporting</li>
                                 </ul>
-                                <button class="btn btn-success w-100 get-started" data-plan="Pro">Get Started</button>
+                                <button class="btn btn-lg btn-primary w-100 get-started" data-plan="Medium-sized Enterprise">Get started</button>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Enterprise Plan -->
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <div class="card-header bg-dark text-white">
-                                <h4 class="my-0 fw-normal">Enterprise</h4>
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                            <div class="card-header py-3 text-bg-primary border-primary">
+                                <h4 class="my-0 fw-normal">Large Enterprise</h4>
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title pricing-card-title">$99 <small class="text-muted">/ mo</small></h1>
+                                <h1 class="card-title pricing-card-title">$300<small class="text-body-secondary fw-light">/mo</small></h1>
                                 <ul class="list-unstyled mt-3 mb-4">
-                                    <li>Custom Solutions</li>
-                                    <li>Unlimited Users</li>
+                                    <li>Premium Package</li>
                                     <li>Dedicated Support</li>
-                                    <li>Advanced Analytics</li>
+                                    <li>Advanced Analitics</li>
                                 </ul>
-                                <button class="btn btn-dark w-100 get-started" data-plan="Enterprise">Get Started</button>
+                                <button class="btn btn-lg btn-primary w-100 get-started" data-plan="Larger-sized Enterprise">Get Started</button>
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <!-- Compare Plans Section -->
+                <h2 class="display-6 text-center mb-4">Compare plans</h2>
+                <div class="table-responsive">
+                    <table class="table text-center">
+                        <thead>
+                            <tr>
+                                <th style="width: 34%;"></th>
+                                <th style="width: 22%;">Free</th>
+                                <th style="width: 22%;">Pro</th>
+                                <th style="width: 22%;">Enterprise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="text-start">Public</th>
+                                <td>&#10003;</td>
+                                <td>&#10003;</td>
+                                <td>&#10003;</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Private</th>
+                                <td></td>
+                                <td>&#10003;</td>
+                                <td>&#10003;</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Permissions</th>
+                                <td>&#10003;</td>
+                                <td>&#10003;</td>
+                                <td>&#10003;</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Sharing</th>
+                                <td></td>
+                                <td>&#10003;</td>
+                                <td>&#10003;</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Unlimited members</th>
+                                <td></td>
+                                <td>&#10003;</td>
+                                <td>&#10003;</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Extra security</th>
+                                <td></td>
+                                <td></td>
+                                <td>&#10003;</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </main>
@@ -103,15 +153,12 @@
     <script>
         document.querySelectorAll(".get-started").forEach(button => {
             button.addEventListener("click", function () {
-                // Simulating user login check
                 const userLoggedIn = localStorage.getItem("userLoggedIn") === "true";
                 const selectedPlan = this.dataset.plan;
 
                 if (userLoggedIn) {
-                    // If logged in, redirect to the pricing details page with the selected plan
                     window.location.href = `pricing_details.html?plan=${selectedPlan}`;
                 } else {
-                    // If not logged in, redirect to the login page
                     alert("You must log in to proceed.");
                     window.location.href = "login.html";
                 }
